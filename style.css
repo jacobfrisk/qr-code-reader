@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+/* custom functions has been created to quickly change the color scheme based on the clients wishes */
+:root {
+  --white-clr: hsl(0, 0%, 100%);
+  --lightgrey-clr: hsl(212, 45%, 89%);
+  --grayblue-clr: hsl(220, 15%, 55%);
+  --darkblue-clr: hsl(218, 44%, 22%);
+  background-color: var(--lightgrey-clr);
+  font-size: 15px;
+}
+
+/* Aligns the QR-code in the center of the viewport, both mobile and desktop */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Setting up the background color, border-rounding and max width for the card. The max-width of the card makes the card stay the same size both in mobile and desktop as intended. */
+.card {
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  max-width: 300px;
+}
+
+/* Aligning text to center and adding padding */
+.container {
+  text-align: center;
+  padding: 15px;
+}
+
+/* Setting image size and border rounding */
+img {
+  max-width: 270px;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+/* setting header typography */
+h1 {
+  margin-top: 1em;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+/* setting sub-header typography */
+p {
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  color: var(--grayblue-clr);
+  font-weight: 400;
+}
